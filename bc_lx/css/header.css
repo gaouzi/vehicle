@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body{
+	font-family:'microsoft yahei',Arial, Helvetica, sans-serif;
+}
+.head {
+  width: 100%;
+  height: 108px;
+  background: #222;
+  overflow: hidden;
+}
+.head_nav {
+  float: left;
+}
+.wrap1 {
+  width: 940px;
+  margin: 0 auto;
+}
+.logo {
+ margin-top: 22px; 
+ float: left;
+}
+.jiantou {
+  float: right;
+}
+
+
+.head_nav li{
+  float: left;
+  height: 56px;
+  padding-top: 52px;
+  line-height: 40px;
+}
+.head_nav li a{
+  font-size: 14px;
+  color:#fff;
+  margin-left: 44px;
+  
+}
+.head_nav li a:hover{
+  color: rgb(100, 197, 226);
+}
+.yc{
+  width: 100%;
+  height: 80px;
+  background:#222;
+  z-index: 2;
+  display: none;
+}
+.show{
+  display: block;
+}
+.search_box{
+ 
+  margin-top: 20px;
+ 
+}
+.s11{
+  width: 188px;
+  padding-left: 28px;
+  height: 34px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  background: #222 url(../images/sou.png) no-repeat 5px center;
+}
+
+.left {
+  float: left;
+}
+.right  {
+  float: right;
+}

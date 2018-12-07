@@ -1,0 +1,528 @@
+/* ////主第二部分 */
+
+.section_two {
+  width: 100%;
+  height: 235px;
+  background-color: #000000;
+  overflow: hidden;
+}
+
+.section-header__subtitle {
+  color: #fff;
+  position: relative;
+  max-width: 940px;
+  text-align: center;
+  margin: 40px auto 12px;
+}
+
+.section-header__subtitle span {
+  font: normal 400 36px/50px "SimSun", serif;
+}
+
+.section-header__subtitleLine::before {
+  content: "";
+  position: relative;
+  width: 1px;
+  height: 45px;
+  top: 10px;
+  left: 15px;
+  margin-right: 15px;
+  background-color: #c00;
+  display: block;
+  transform: rotate(15deg);
+  display: inline-block;
+}
+
+.section-header__text {
+  margin-bottom: 50px;
+}
+
+.wrapper11 {
+  width: calc(940/980 * 100%);
+  max-width: 940px;
+}
+
+.section-header__detail.center {
+
+  display: block;
+  text-align: center;
+}
+
+.section-header__detail {
+  margin: 70px 210px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-family: '微软雅黑';
+  color: #fff;
+}
+
+.section-header__hero {
+  height: 422px;
+  width: 100%;
+  background-color: #000;
+}
+
+.section-header__video {
+  width: 100%;
+}
+
+#jietu {
+  width: 100%;
+}
+
+#jietu img {
+  width: 100%;
+}
+
+/* //视频上部分 */
+.xiangxi {
+  height: 425px;
+  background-color: #000000;
+}
+
+.xiangxi .banxin {
+  width: 940px;
+  height: 425px;
+  margin: 0 auto;
+}
+
+.xiangxi_p {
+  text-align: center;
+  font-size: 14px;
+  color: #fff;
+
+}
+
+.xiangxi_left {
+  width: 460px;
+  height: 300px;
+  float: left;
+
+}
+
+.xiangxi_left img {
+  width: 460px;
+  height: 300px;
+}
+
+.media-text__copy-container {
+  float: left;
+  display: block;
+  margin-right: 1.12766%;
+  margin-left: 5.51064%;
+  width: 400px;
+  height: 169px;
+}
+
+.media-text__title {
+  color: #fff;
+  margin-bottom: 24px;
+  font: normal 400 28px/1 "SimSun", serif;
+}
+
+.media-text__sub-title {
+  color: #fff;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.xiangxi1 {
+  overflow: hidden;
+  height: 410px;
+  background-color: #000000;
+}
+
+.xiangxi1 .banxin1 {
+  width: 940px;
+  height: 410px;
+  margin: 0 auto;
+}
+
+.media-text__copy-container1 {
+  float: left;
+  display: block;
+  width: 400px;
+  height: 169px;
+  margin-top: 90px;
+
+}
+
+.xiangxi_left1 {
+  margin-left: 30px;
+  width: 460px;
+  height: 300px;
+  float: right;
+}
+
+/* 第三部分 */
+.audio-engine {
+  overflow: hidden;
+  height: 89px;
+  margin: 0 auto;
+  text-align: center;
+  background: #000;
+  font-family: "PingFang SC", "Hiragino Sans GB", "Noto Sans CJK SC", "Source Han Sans SC", "Microsoft YaHei", "SimHei", Helvetica, Arial;
+}
+
+.audio-engine__text {
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 20px;
+  width: 44%;
+  width: 60%;
+}
+
+.audio-engine__text__title {
+  margin-bottom: 20px;
+  color: #fff;
+  font: normal 400 28px/1 "SimSun", serif;
+}
+
+.audio-engine__text__decription {
+
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  font-family: '微软雅黑';
+}
+
+
+/* 视频下面第一部分 */
+.section-header {
+  overflow: hidden;
+}
+
+.wrapper {
+  width: -moz-calc(940/980 * 100%);
+  width: calc(940/980 * 100%);
+  max-width: 940px;
+}
+/* .wrapper::after {
+  clear: both;
+  content: "";
+  display: block;
+} */
+.section-header__text .section-header__detail center {
+  font-size: 16px;
+}
+/* //效果部分——js代码 */
+.img_cartu {
+  width: 100%;
+}
+.img_cartu img {
+  width: 100%;
+}
+.xiangxi_left1.xia {
+
+    margin-left: 30px;
+    width: 400px;
+    height: 169px;
+    float: right;
+
+  margin-top: 90px;
+}
+.media-text__copy-container1.xia1 {
+  float: left;
+  display: block;
+  width: 460px;
+  height: 300px;
+}
+.media-text__copy-container1.xia1 img {
+  margin-top: -66px;
+}
+/* <!-- //车型规格 --> */
+.car_type {
+  height: 100px;
+  background-color: #000;
+  line-height: 100px;
+  text-align: center;
+}
+.car_type_header {
+  width: 940px;
+  margin: 0 auto;
+
+} 
+.car_type_header span {
+  color: #fff;
+  font: normal 400 36px/50px "SimSun",serif;
+ }
+ .car_type_header::before {
+  content: "";
+  position: relative;
+  width: 1px;
+  height: 45px;
+  top: 10px;
+  left: 15px;
+  margin-right: 15px;
+  background-color: #c00;
+  display: block;
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  transform: rotate(15deg);
+  display: inline-block;
+}
+.car_type_body {
+  background-color: #18181d;
+  height: 270px;
+  overflow: hidden;
+  padding-top: 30px;
+}
+.wrapper {
+  height: 240px;
+  width: 940px;
+  margin: 0 auto;
+}
+.layout__model {
+  font-family: "SimSun",serif;
+  font-size: 24px;
+  line-height: normal;
+  display: inline-block;
+  width: 207px;
+  height: 70px;
+  color: #fff;
+}
+.car_type_body_top1 {
+  line-height: 36px;
+  margin-bottom: 30px;
+  float: left;
+ height: 89px;
+ width: 940px;
+ 
+}
+.layout__compute {
+  float: right;
+  margin-right: 300px;
+  font-size: 16px;
+  color: #fff;
+}
+.car_type_body_footer {
+  height: 96px;
+  display: block;
+}
+.zuotu1 img {
+  width: 230px;
+  height: 96px;
+}
+.car_type_body_footer  .one {
+  float: left;
+}
+.shuxian {
+  display: block;
+  height: 96px;
+  width: 1px;
+  border: 1px solid;
+  background-color: #c7c7c7;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.car_type_body_footer .lists .one1 li {
+  font-size: 12px;
+  display: block;
+  height: 10px;
+  margin-top: 15px;
+  color:#c7c7c7
+}
+.two {
+  margin-left: 110px;
+}
+.car_type_body_footer .you {
+  float: right;
+}
+.you .s1 {
+  display: block;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background-color: #cc0000;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 15px;
+  
+}
+.you .s2 {
+  display: block;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid #fff;
+  /* margin-top: 10px; */
+  
+}
+.chaxun {
+  height: 676px;
+  background-color: #000;
+}
+.erweima {
+  margin: 0 auto;
+  width: 112px;
+  height: 112px;
+  margin-top: 20px;
+}
+.erweima2 {
+  margin: 0 auto;
+  width: 180px;
+  font-size: 14px;
+  font-weight: 700;
+
+}
+
+
+/* 俱乐部部分 */
+.content-top {
+  height: 638px;
+  background-color: #252425;
+}
+
+.wrap {
+  width: 100%;
+}
+
+.span_1_of_3 {
+  width: 30.2%;
+  float: left;
+  border-top: 10px solid #404140;
+  border-bottom: 20px solid #DE5491;
+  margin: 0% 0 0% 3.6%;
+}
+
+.span_1_of_3:nth-child(1) {
+  margin-left: 0;
+}
+
+.thumb-pad2 {
+  text-align: center;
+  transition: all 0.8s ease;
+}
+
+.thumb-pad2 .thumbnail {
+  position: relative;
+  margin: 0 0 84px 0;
+  padding-top: 78px;
+}
+
+.thumbnail h4 {
+  color: #FFF;
+  font-family: 'bebas_neueregular';
+  margin: 0 0 14px 0;
+  font-size: 4em;
+}
+
+.thumbnail img {
+  width: 228px;
+  height: 228px;
+  border-radius: 114px;
+  position: relative;
+}
+
+.caption {
+  color: #989A96;
+  padding: 5px 0 0 0;
+  overflow: hidden;
+}
+
+.thumb-pad2 .thumbnail .caption p {
+  text-align: left;
+  transition: all 0.8s ease;
+  font-size: 13px;
+  line-height: 1.5em;
+  margin-bottom: 2.5em;
+}
+
+.btn1 {
+  position: relative;
+  font: 15px "PT Sans", Helvetica, Arial, sans-serif;
+  color: #FFF;
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* 中间部分 */
+.content-middle {
+  height: 620px;
+  padding-top: 79px;
+  padding-bottom: 91px;
+  vertical-align: baseline;
+}
+
+.content-middle .wrap {
+  width: 1214px;
+  height: 478px;
+}
+
+.content-middle .span_1_of_2 {
+  width: 560px;
+  height: 478px;
+}
+
+.col_1_of_2 {
+  display: block;
+  float: left;
+  margin-left: 3.6%;
+}
+
+.thumb-pad3 {
+  text-align: center;
+}
+
+.thumb-pad3 figure>img {
+  border-radius: 230px;
+  padding: 0;
+  width: 100%;
+  box-shadow: -1px 0 80px #9f7753;
+}
+
+.span_1_of_2 {
+  width: 560px;
+  height: 478px;
+}
+
+.col_1_of_2 {
+  display: block;
+  float: left;
+  margin: 0% 0 0% 3.6%;
+}
+
+.hezi2 {
+  height: 448px;
+  padding-top: 30px;
+}
+
+.title1 {
+  font-family: 'bebas_neueregular';
+  font-size: 11em;
+  color: #DE5491;
+  margin: 0;
+}
+
+.title2 {
+  font-family: 'bebas_neueregular';
+  font-size: 4em;
+  color: #2C2D2B;
+  margin: 0 0 37px 0;
+}
+
+.btn_join {
+  position: relative;
+  padding: 20px 51px 20px 52px;
+  font-family: 'bebas_neueregular';
+  color: #FFF;
+  background: #DE5491;
+  display: inline-block;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+.del_buhuo2 {
+  vertical-align: top;
+  width: 100%;
+}
+.img_cartu1 {
+  height: 422.4px;
+}
+
+/* //尾部 */

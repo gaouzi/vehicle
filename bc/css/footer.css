@@ -1,0 +1,271 @@
+.footer{
+	background-color: #f1f1f1;
+	height:890px;
+}
+.footerone{
+	height: 516px;
+	border-bottom: 1px solid #ccc;
+}
+.footerone dl{
+	float: left;
+	margin-top: 45px;
+	margin-right: 190px;
+}
+
+.footerone dt,dd{
+	margin: 30px 0;
+}
+.footerone dt a{
+	font-size: 15px;
+}
+.footertwo{
+	height: 130px;
+	border-bottom: 1px solid #ccc;
+	padding: 1px;
+}
+.footertwo p{
+	margin-top: 38px;
+}
+.footertwo p a{
+	font-size:15px;
+}
+.footertwo li{
+	float: left;
+	margin-top: 43px;
+}
+.footertwo li a{
+	margin-right: 164px;
+}
+.footerthree{
+	height: 195px;
+	padding: 1px;
+}
+.footerthree p{
+	margin-top: 38px;
+}
+.footerthree p a{
+	font-size: 15px;
+}
+.footerthree img{
+	height: 40px;
+	width: 40px;
+}
+.footerthree-one{
+	margin-top: 35px;
+	display: block;
+	float: left;
+	margin-right: 20px;
+}
+.footerfour{
+	height:50px;
+	background-color: black;
+	line-height: 50px;
+}
+.footerfour-one{
+	height: 50px;
+}
+.footerfour-one li{
+	float: left;
+	margin-right: 33px;
+}
+.footerfour-one li a{
+	color: #ccc;
+}
+.footerfour-one li a:hover{
+	color: blue;
+}
+.banner{
+	height: 550px;
+	position: relative;
+	background-image: url(../images/E-Class-Coupe.jpg);
+
+	background-repeat: no-repeat;
+	background-position: -60px 0;
+}
+
+.bannerone{
+	height: 200px;
+	width: 300px;
+	background-color: white;
+	opacity: 0.8;
+	position: absolute;
+	top: 106px;
+	left:144px;
+}
+.bannertwo{
+	height: 440px;
+	position: absolute;
+	top: 0;
+	left: 150px;
+}
+.bannerthree{
+	font-size: 25px;
+	font-weight: 200;
+	margin-left: 40px;
+	margin-top: 50px;
+}
+.bannerfour{
+	font-size: 15px;
+	font-weight: 200;
+	margin-left: 40px;
+	margin-top: 25px;
+}
+.bannerfive a{
+	font-size: 15px;
+	font-weight: 400;
+	
+}
+.bannerfive{
+	margin-left: 40px;
+	margin-top: 25px;
+}
+.bannerfive a:hover{
+	color: #74a0b9;
+}
+/*第一个显示的照片*/
+
+.findmore{
+	height: 760px;
+}
+.findmoreone li{
+	float: left;
+}
+.findmoreone-one,.findmoreone-three{
+	background-color: #ccc;
+	width: 410px;
+	height: 1px;
+}
+.findmoreone{
+	height: 80px;
+}
+.findmoreone-one,.findmoreone-three{
+	margin-top: 20px;
+}
+.findmoreone-two{
+	font-size: 30px;
+	font-weight: 200;
+}
+.findmoretwo-two-none{
+	display: none;
+}
+.findmoretwo{
+	height:300px ;
+	background: url(../images/swq.jpg) no-repeat;
+	background-size: cover;
+	line-height: 300px;
+	position: relative;
+}
+.findmoretwo-one{
+	height: 300px;
+	width: 940px;
+	background-color:black;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	left:0px;
+	top:0px;
+	display: none;
+}
+.findmoretwo-two{
+	color: white;
+	font-size: 40px;
+	font-weight: 200;
+	font-family: '宋体';
+	margin-left: 50px;
+	/*display: none;*/
+}
+.findmoretwo-three{
+	color: white;
+	font-size: 40px;
+	font-weight: 200;
+	font-family: '宋体';
+	margin-left:50px;
+	height: 40px;
+}
+.findmoretwo-four,.findmoretwo-five,.findmoretwo-six{
+	color: white;
+	margin-left: 50px;
+	font-size: 15px;
+	height: 15px;
+}
+.findmoretwo-six a{
+	color: white;
+	font-size:15px;
+}
+.findmoretwo-six a:hover{
+	color: skyblue;
+}
+.findmoretwo-four{
+	margin-top: 20px;
+}
+.findmoretwo-six{
+	margin-top: 40px;
+}
+
+/*第二个显示的照片*/
+.findmoreleft{
+	width: 620px;
+	height: 300px;
+	background: url(../images/yyy.jpg) no-repeat;
+	background-size: cover;
+	margin-top: 10px;
+	line-height: 300px;
+	position: relative;
+
+}
+.findmoreleft-one{
+	color: white;
+	font-size: 40px;
+	font-weight: 200;
+	font-family: '宋体';
+	margin-left: 50px;
+	position: relative;
+	top:20px;
+	height: 40px;
+}
+.findmoreleft-one-none{
+	display: none;
+}
+.findmoreleft-two{
+	height: 300px;
+	width: 620px;
+	background-color:black;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 0px;
+	top:0px;
+	display: none;
+}
+/*/*第三个显示的照片*/
+.findmoreright{
+	width: 310px;
+	height: 300px;
+	background: url(../images/syy.jpg) no-repeat;
+	background-size: cover;
+	line-height: 300px;
+	position: relative;
+	top: -300px;
+	left: 630px;
+}
+.findmoreright-two{
+	height: 300px;
+	width: 310px;
+	background-color:black;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 0px;
+	top:0px;
+	display: none;
+}
+.findmoreright-one{
+	color: white;
+	font-size: 40px;
+	font-weight: 200;
+	font-family: '宋体';
+	margin-left: 50px;
+	position: relative;
+	top:20px;
+	height: 40px;
+}
+.findmoreright-one-none{
+	display: none;
+}

@@ -1,0 +1,47 @@
+*{
+	margin: 0 ;
+	padding: 0 ;
+	list-style: none;
+	font-size: 12px;
+}
+img,input {
+	border: 0 none;
+	outline-style: none;
+	padding: 0;
+}
+
+
+/* 清除浮动代码 */
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+.clearfix {
+	zoom: 1;
+}
+
+
+/* 版心 */
+.w {
+	width: 940px;
+	margin: 0 auto;
+}
+a {
+	text-decoration: none;
+	color: black;
+	font-size: 12px;
+
+}
+a:hover{
+	color: pink;
+}
+.left{
+	float: left;
+}
+.right{
+	float: right;
+}

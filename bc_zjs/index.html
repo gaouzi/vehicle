@@ -1,0 +1,344 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>关于我们</title>
+<link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" type="text/css" href="css/pgwslideshow.css">
+<script src="./js/jquery-1.11.0.min.js"></script>
+<link href="./css/style.css" rel="stylesheet" type="text/css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script type="text/javascript" src="./js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -30}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+		
+		
+	});	
+	</script>
+	<script type="text/javascript" src="./js/easing.js"></script>
+					<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+</script>
+</head>
+<body>
+	<!--- Header Starts Here ---->
+	<div class="header" id="home">
+		<div class="container">
+			<div class="logos">
+				<!-- <a href="index.html"><img src="./images/logo.png" alt=""></a> -->
+			</div>
+			<!--- banner Slider starts Here --->
+	  			<script src="./js/responsiveslides.min.js"></script>
+					 <script>
+					    // You can also use "$(window).load(function() {"
+					    $(function () {
+					      // Slideshow 4
+					      $("#slider4").responsiveSlides({
+					        auto: true,
+					        pager: true,
+					        nav: true,
+					        speed: 500,
+					        namespace: "callbacks",
+					        before: function () {
+					          $('.events').append("<li>before event fired.</li>");
+					        },
+					        after: function () {
+					          $('.events').append("<li>after event fired.</li>");
+					        }
+					      });
+					
+					    });
+					  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+						<a href="../bc/index.html">
+								<ul class="rslides" id="slider4">
+										<!-- 需要更改的轮播图文字内容 -->
+														<li>
+															<div class="slide-content">
+														<h2>让世界为你停留</h2>
+														<p>你是否苦恼于自己的平凡，不该沦为沧海一粟；你是否曾抱怨他人的冷漠，决心变得与众不同；<br>选择不平凡的，才会变成受瞩目的。</p>
+														<!-- <a href="">Contact us</a> -->
+													</div>
+												 </li>
+												 <li>
+															<div class="slide-content">
+														<h2>引领世界的目光，让你与众不同</h2>
+														<p>敏捷灵活，动静之间尽显卓越风范，最美一刻，就在您面前。选择奔驰!<br>成就与众不同的自己，让世界为你停留。</p>
+														<!-- <a href="">Contact us</a> -->
+													</div>
+												 </li>
+												 <li>
+															<div class="slide-content">
+														<h2>世界想定义你的美，而你定义了美</h2>
+														<p>你在等待一顿晚餐？
+															 一顿晚餐在等待你;
+															你在等待一个机遇？
+															机遇大概不会等你;
+															<br>管他的，向前走方向自然会有！
+															</p>
+														<!-- <a href="">Contact us</a> -->
+													</div>
+												 </li>
+													</ul>
+						</a>
+			     
+			    </div>
+		</div>
+	</div>
+	<!--- Header Ends Here ---->
+	<!-- Navigation Starts Here ---->
+	<!-- top-nav -->
+		<!-- 头部的导航 需要更换的内容  -->
+		<div class="top-nav">
+			<nav>
+				<span class="menu"></span>
+				<ul>
+					<!-- <li><a href="#about" class="scroll">关于我们</a></li> -->
+
+					<!-- <li><a href="#work" class="scroll">Work</a></li> -->
+					<li class="active"><a href="#home" class="scroll">Home</a></li>
+					<!-- <li><a href="#service" class="scroll">Service</a></li> -->
+					<!-- <li><a href="#contact" class="scroll">个人风采</a></li> -->
+
+					<div class="clearfix"> </div>
+				</ul>
+			</nav>
+		</div>
+		<script>
+					$( "span.menu" ).click(function() {
+					  $( ".top-nav ul" ).slideToggle( "slow", function() {
+					    // Animation complete.
+					  });
+					});
+				</script>
+                                                                               
+		<script src="./js/myscript.js"> </script>                                                     
+		<!-- top-nav -->  
+		<!-- 团队介绍 -->
+	<!--- Navigarion Ends Here --->                      
+	<!--- About Us Starts Here ---->      
+	<div class="about" id="about">
+		<div class="container">
+			<h3 class="top-title">About us</h3>
+			<h4>Why Us?</h4>
+			<p> 在这个网络发达的社会，要让我们的网站有所成功，我们就必须就要有着自己的特色，这才能使我们的网页夺人眼球、新颖独特、大受欢迎。 网页的亮点和特色是一个网站的灵魂之一。要是我们的网站有鲜明的亮点，就需要把各个板块都布置得十分的明显，让访客能够进去直接找到他们想要 的内容，这也是努力的方向。
+			</p>
+			<p class="show-not">在网站创建与经营的过程中，不管是组长的领导力还是组员的执行力都是极为重要和关键的，我们必须能够沉着的应对每一个问题，而不是遇到问题互相 推卸责任。 网站建设来说，不是一个人就能够轻而易举的成功，一个网站也是需要很多人同时去运营的，而且各自有着各自的分工，有的负责页面规划，有的负责测 试运行等等。 一个有着良好沟通的合作小组成功的可能性更大一些，同心协力是十分重要。我们小组在网页设计的过程中，在更多地交流和沟通之下，能够处理大部分 的问题，对待自己被分工到的部分也都很有责任心，因此网站整体来说也是有收获的。</p>
+			
+			<!-- 自我加入的轮播图介绍内容 -->
+			<div class="jq22-container">
+					<div class="jq22-content bgcolor-3">
+						<ul class="pgwSlideshow">
+							<li><img src="images/a1.jpg" alt=""></li>
+							<li><img src="images/a2.jpg" alt=""></li>
+							<li><img src="images/a3.png" alt=""></li>
+							<li><img src="images/a4.jpg" alt=""></li>
+							<li><img src="images/a5.jpg" alt=""></li>
+							<li><img src="images/a6.jpg" alt=""></li>
+							<li><img src="images/a7.jpg" alt=""></li>
+							<li><img src="images/a8.png" alt=""></li>
+							<li><img src="images/a9.jpg" alt=""></li>
+						</ul>
+					
+					</div>
+					
+				</div>
+				
+				
+		</div>
+	</div>
+	<script type="text/javascript" src="js/pgwslideshow.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+		    $('.pgwSlideshow').pgwSlideshow({
+		    	transitionEffect:'fading',
+		    	autoSlide:true
+		    });
+		});
+	</script>
+<div class="baoguo">
+	<div class="col-md-9 about-column">
+		<h3>赵垒</h3>
+		<h4>分工</h4>
+		<p>组长兼主题设定</p>
+		<h4>相关介绍</h4>
+		<p>小组组长，小小年纪走遍祖国大江南北，从网页的选题到任务的分配，再到具体各个任务的实施，和组员都进行了深入的沟通和协调。</p>
+		<h4>Skills</h4>
+		<div id="progressbar"><div id="progress" ><div id="pbaranim">11%</div></div></div>
+		<ul class="social">
+			<li><i class="fa"></i></li>
+			<li><i class="tw"></i></li>
+			<li><i class="in"></i></li>
+			<li><i class="pw"></i></li>
+		</ul>
+	</div>
+	<div class="col-md-9 about-column">
+		<h3>司文强</h3>
+		<h4>分工</h4>
+		<p>首页设计</p>
+		<h4>个人介绍</h4>
+		<p>不辞辛苦，敢想敢做，主要负责首页的策划，在这次设计中加入了很多自己独特的想法与创意。</p>
+		<h4>Skills</h4>
+		<div id="progressbar"><div id="progress" ><div id="pbaranim">11%</div></div></div>
+		<ul class="social">
+			<li><i class="fa"></i></li>
+			<li><i class="tw"></i></li>
+			<li><i class="in"></i></li>
+			<li><i class="pw"></i></li>
+		</ul>
+	</div>
+	<div class="col-md-9 about-column">
+		<h3>仝海娜</h3>
+		<h4>分工</h4>
+		<p>首页设计</p>
+		<h4>相关介绍</h4>
+		<p>率先完成了首页的设计和开发工作，为小组的先锋和表率。</p>
+		<h4>Skills</h4>
+		<div id="progressbar"><div id="progress" ><div id="pbaranim">11%</div></div></div>
+		<ul class="social">
+			<li><i class="fa"></i></li>
+			<li><i class="tw"></i></li>
+			<li><i class="in"></i></li>
+			<li><i class="pw"></i></li>
+		</ul>
+	</div>
+	<div class="col-md-9 about-column">
+		<h3>李扶平</h3>
+		<h4>分工</h4>
+		<p>注册及登录页面设计</p>
+		<h4>相关介绍</h4>
+		<p>完成了整个注册和登陆页面的设计开发工作，注入了自己独特的想法。</p>
+		<h4>Skills</h4>
+		<div id="progressbar"><div id="progress" ><div id="pbaranim">11%</div></div></div>
+		<ul class="social">
+			<li><i class="fa"></i></li>
+			<li><i class="tw"></i></li>
+			<li><i class="in"></i></li>
+			<li><i class="pw"></i></li>
+		</ul>
+	</div>
+	<div class="col-md-9 about-column">
+		<h3>李绚</h3>
+		<h4>分工</h4>
+		<p>详情页设计</p>
+		<h4>相关介绍</h4>
+		<p>不辞辛苦，积极探索，精益求精，追求完美的态度值得我们学习。</p>
+		<h4>Skills</h4>
+		<div id="progressbar"><div id="progress" ><div id="pbaranim">11%</div></div></div>
+		<ul class="social">
+			<li><i class="fa"></i></li>
+			<li><i class="tw"></i></li>
+			<li><i class="in"></i></li>
+			<li><i class="pw"></i></li>
+		</ul>
+	</div>
+	<div class="col-md-9 about-column">
+		<h3>马小雅</h3>
+		<h4>分工</h4>
+		<p>详情页设计</p>
+		<h4>相关介绍</h4>
+		<p>活泼开朗 girl,在团队中起着沟通和桥梁的作用，永远充满着正能量。</p>
+		<h4>Skills</h4>
+		<div id="progressbar"><div id="progress" ><div id="pbaranim">11%</div></div></div>
+		<ul class="social">
+			<li><i class="fa"></i></li>
+			<li><i class="tw"></i></li>
+			<li><i class="in"></i></li>
+			<li><i class="pw"></i></li>
+		</ul>
+	</div>
+	<div class="col-md-9 about-column">
+		<h3>于蕙歌</h3>
+		<h4>分工</h4>
+		<p>详情页设计</p>
+		<h4>相关介绍</h4>
+		<p>积极主动，独立探索，会不断有自己的小点子。</p>
+		<h4>Skills</h4>
+		<div id="progressbar"><div id="progress" ><div id="pbaranim">11%</div></div></div>
+		<ul class="social">
+			<li><i class="fa"></i></li>
+			<li><i class="tw"></i></li>
+			<li><i class="in"></i></li>
+			<li><i class="pw"></i></li>
+		</ul>
+	</div>
+	<div class="col-md-9 about-column">
+		<h3>李旦</h3>
+		<h4>分工</h4>
+		<p>详情页设计</p>
+		<h4>相关介绍</h4>
+		<p>特斯拉形象大使，积极主动热心，在一次次的修改中不断完善自己的页面，同时收获了成长。</p>
+		<h4>Skills</h4>
+		<div id="progressbar"><div id="progress" ><div id="pbaranim">11%</div></div></div>
+		<ul class="social">
+			<li><i class="fa"></i></li>
+			<li><i class="tw"></i></li>
+			<li><i class="in"></i></li>
+			<li><i class="pw"></i></li>
+		</ul>
+	</div>
+	<div class="col-md-9 about-column">
+		<h3>赵金帅</h3>
+		<h4>分工</h4>
+		<p>关于我们页面设计</p>
+		<h4>个人介绍及开发感悟</h4>
+		<p>整个开发过程中遇到了许多障碍和困扰，好在无论怎样也没有放弃，以后可要端正自己的学习态度喽。</p>
+		<h4>Skills</h4>
+		<div id="progressbar"><div id="progress" ><div id="pbaranim">11%</div></div></div>
+		<ul class="social">
+			<li><i class="fa"></i></li>
+			<li><i class="tw"></i></li>
+			<li><i class="in"></i></li>
+			<li><i class="pw"></i></li>
+		</ul>
+	</div>
+</div>
+	
+	<!--- Footer Ends here --->
+</body>
+</html>

@@ -1,0 +1,63 @@
+
+.img_cartu img {
+  
+  vertical-align: top;
+}
+.img_cartu {
+  position: relative;
+}
+/* .image-carousel__tab-dots {
+  width: 32px;
+  height: 32px;
+} */
+.xiangxi1.lx {
+  height: 390px;
+}
+
+/* 主要的代码 */
+.image-carousel__tab-dot--P8 {
+  width: 32px;
+  height: 32px;
+  border: 1px solid #c00;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: 130px;
+  left: 541px;
+  cursor: pointer;
+}
+
+
+.image-carousel__tab-dot::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 2px;
+  position: absolute;
+  top: -moz-calc(50% - 1px);
+  top: calc(50% - 1px);
+  left: -moz-calc(50% - 6px);
+  left: calc(50% - 6px);
+  background-color: #c00;
+}
+.image-carousel__tab-dot::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 12px;
+  position: absolute;
+  top: -moz-calc(50% - 6px);
+  top: calc(50% - 6px);
+  left: -moz-calc(50% - 1px);
+  left: calc(50% - 1px);
+  background-color: #c00;
+}
+
+/* 隐藏 */
+.yincang {
+  display: none;
+}
+/* 显示 */
+.yincang.active {
+  display: block;
+}

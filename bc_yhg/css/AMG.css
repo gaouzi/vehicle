@@ -1,0 +1,326 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  border: 0;
+}
+input,img{
+	outline-style: none;
+	vertical-align: middle;
+}
+a{
+  text-decoration-line: none;
+}
+.left{
+  float: left;
+}
+.right{
+  float: right;
+}
+.clearfix::after{
+	content: "";
+	width: 0;
+	height: 0;
+	line-height: 0px;
+	display: block;
+	clear: both;
+	visibility: hidden;
+}
+.clearfix{
+	zoom: 1;
+}
+/* 版心 */
+.y_wrapper ,.w{
+  width: 940px;
+  margin: 0 auto;
+}
+/* 标题 */
+.y_title{
+  height: 110px;
+  background-color: #222;
+}
+/* 标题导航栏 */
+.y_title_nav{
+  margin-top: 22px;
+}
+.y_title_nav li a{
+display: block;
+ padding-left: 30px;
+ padding-right: 20px;
+ font-size: 14px;
+ color: #fff;
+ height: 100%;
+ margin-top: 40px;
+}
+.y_title_nav li a:hover{
+  color: #00ADEF;
+}
+.y_title_nav li:nth-child(1) a{
+  padding-left: 0;
+  margin-top:0;
+}
+.y_title img{
+  width: 259px;
+  height: 64px;
+}
+video,img{
+  width:100%;
+}
+
+/* 轮播图开始	flexslider */
+.flexslider{
+  position:relative;
+  height:560px;
+  overflow:hidden;
+  background-color: #000;
+}
+
+.slides{
+  position:relative;
+  z-index:1;
+  width: 100%;
+}
+.slides li{height:560px;}
+.flex-control-nav{
+  position:absolute;
+  bottom:10px;z-index:2;
+  width:100%;
+  text-align:center;
+}
+.flex-control-nav li{
+  display:inline-block;
+  width:14px;
+  height:14px;
+  margin:0 5px;
+  display:inline;zoom:1;
+}
+.flex-control-nav a{
+  display:inline-block;
+  width:14px;height:14px;
+  line-height:40px;
+  overflow:hidden;
+  background: right 0 no-repeat;
+  cursor:pointer;
+  ;background:url(../images/dot.png) right 0 no-repeat;
+}
+.flex-control-nav .flex-active{background-position:0 0;}
+
+.flex-direction-nav{
+  position:absolute;
+  z-index:3;
+  width:100%;
+  top:45%;
+}
+.flex-direction-nav li a{
+  display:block;
+  width:50px;
+  height:50px;
+  overflow:hidden;
+  cursor:pointer;
+  position:absolute;
+}
+.flex-direction-nav li a.flex-prev{
+  left:40px;
+  background:url(../images/prev.png) center center no-repeat;
+}
+.flex-direction-nav li a.flex-next{
+  right:40px;
+  background:url(../images/next.png) center center no-repeat;
+}
+.w_val{
+  width: 100%;
+}
+/* 视频部分 */
+.video_nav{
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  background-color: #000;
+  line-height: 60px;
+}
+.video_nav ul {
+  width: 840px;
+  margin: 0 auto;
+}
+.video_nav li a{
+ margin: 0 30px;
+ color: #fff;
+}
+.video_nav li a:hover{
+  color: #CC0000;
+}
+#_nav{
+  width: 100%;
+  display: none;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+/* 汽车详情 */
+.car_type{
+  text-align: center;
+  padding-left: 300px;
+}
+.car_type li{
+ height: 14px;
+ padding: 0 5px 8px;
+ margin-right: 50px;
+ float: left;
+ cursor:pointer;
+}
+.car_type li.active{
+  border-bottom: #CC0000 3px solid;
+}
+.tab-content .tab-content-item {
+  display:none;
+}
+.tab-content .tab-content-item.active {
+  display:block;
+}
+
+/* 查找经销商 */
+/* 汽车详情 */
+.cars , .dealer ,.about,.amgact{
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  /* border: 1px solid #000; */
+  width: 100%;
+}
+.cars_title, .dealer_title, .about_title,.amgact_title{
+  font-size: 24px;
+  height: 180px;
+  line-height: 180px;
+}
+.map_box{
+  height: 450px;
+  border: #000 1px solid;
+  position: relative;
+}
+.map{
+  margin: 0 auto; 
+  width: 1000px;
+  height: 450px;
+  background:url(../images/map1.png) no-repeat -450px -250px;
+  overflow: hidden;
+  position: relative;
+  border: #000 1px solid;
+}
+/* .map_pic{
+  position: absolute;
+  margin-left: -450px;
+  margin-top: -250px;
+} */
+.mapsmall{
+  width: 200px;
+  height: 90px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 5;
+  border: #ccc 1px solid;
+}
+.tool{
+  width: 100px;
+    height: 45px;
+    background:gold;
+    opacity:.5;
+    position: absolute;
+    top:25px;
+    left: 45px;
+    cursor: move;
+}
+.about_c{
+  width: 100%;
+}
+
+/* 底部 */
+.footer{
+	background-color: #f1f1f1;
+	height:890px;
+}
+.footer a {
+	text-decoration: none;
+	color: black;
+	font-size: 12px;
+
+}
+.footer a:hover{
+	color: pink;
+}
+.footerone{
+	height: 516px;
+	border-bottom: 1px solid #ccc;
+}
+.footerone dl{
+	float: left;
+	margin-top: 45px;
+	margin-right: 150px;
+}
+
+.footerone dt,dd{
+	margin: 30px 0;
+}
+.footerone dt a{
+	font-size: 15px;
+}
+.footertwo{
+	height: 130px;
+	border-bottom: 1px solid #ccc;
+	padding: 1px;
+}
+.footertwo p{
+	margin-top: 38px;
+}
+.footertwo p a{
+	font-size:15px;
+}
+.footertwo li{
+	float: left;
+	margin-top: 43px;
+}
+.footertwo li a{
+	margin-right: 112px;
+}
+.footerthree{
+	height: 195px;
+	padding: 1px;
+}
+.footerthree p{
+	margin-top: 38px;
+}
+.footerthree p a{
+	font-size: 15px;
+}
+.footerthree img{
+	height: 40px;
+	width: 40px;
+}
+.footerthree-one{
+	margin-top: 35px;
+	display: block;
+	float: left;
+	margin-right: 20px;
+}
+.footerfour{
+	height:50px;
+	background-color: black;
+	line-height: 50px;
+}
+.footerfour-one{
+	height: 50px;
+}
+.footerfour-one li{
+	float: left;
+	margin-right: 33px;
+}
+.footerfour-one li a{
+	color: #ccc;
+}
+.footerfour-one li a:hover{
+	color: blue;
+}
+
+.action{
+  color: #CC0000;
+}

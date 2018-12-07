@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+div {
+  /* line-height: 610px; */
+  text-align: center;
+  background: rgb(179, 135, 89);
+  /* background-image: url(./img); */
+  font-size: 100px;
+}

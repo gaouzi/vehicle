@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-image: url(./img/1.jpg);
+      /* background-size: cover; */
+    }
+
+    .box {
+      position: relative;
+      /* 3D远近大小效果 */
+      perspective: 1000px;
+      float: left;
+      height: 672px;
+      width: 366px;
+      margin-top: 10px;
+    }
+
+    .box:first-child {
+      margin-left: 30px;
+    }
+
+    .box div {
+      /* 正反面都定位在同一个盒子里 */
+      position: absolute;
+      top: 0;
+      left: 0;
+      /* 隐藏被旋转元素的背面，不隐藏会覆盖正面的div */
+      backface-visibility: hidden;
+      /* background: #f00; */
+      background: url(./img/1.jpg) 100% 100%;
+      background-size: cover;
+      border: 4px solid;
+
+      height: 100%;
+      width: 100%;
+    }
+
+    .box .one_1 {
+      background: url(./img/12.jpg) 100% 100%;
+      background-size: cover;
+    }
+    .box .one_2 {
+      background: url(./img/13.jpg) 100% 100%;
+      background-size: cover;
+    }
+    .box .one_3 {
+      background: url(./img/14.jpg) 100% 100%;
+      background-size: cover;
+    }
+    .box .one_4 {
+      background: url(./img/15.jpg) 100% 100%;
+      background-size: cover;
+    }
+
+    .box .back {
+      background: url(./img/2.jpg) 100% 100%;
+      background-size: cover;
+      /* 让反面一开始就沿着Y轴翻转180度，阻止后期出现镜面效果 */
+      transform: rotateY(180deg);
+    }
+
+    .box .two {
+      background: url(./img/3.jpg) no-repeat;
+      background-size: cover;
+    }
+
+    .box .three {
+      background: url(./img/4.jpg) no-repeat;
+      background-size: cover;
+    }
+
+    .box .four {
+      background: url(./img/5.jpg) no-repeat;
+      background-size: cover;
+    }
+
+    .box:hover .front {
+      transform: rotateY(180deg);
+      transition: all 2s;
+    }
+
+    .box:hover .back {
+      transform: rotateY(360deg);
+      transition: all 2s;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box">
+    <div class="front one_1">正面</div>
+    <div class="back">反面</div>
+  </div>
+  <div class="box">
+    <div class="front one_2">正面</div>
+    <div class="back two">反面</div>
+  </div>
+  <div class="box">
+    <div class="front one_3">正面</div>
+    <div class="back three">反面</div>
+  </div>
+  <div class="box">
+    <div class="front one_4">正面</div>
+    <div class="back four">反面</div>
+  </div>
+  <script src="./js/vendor/jquery-1.12.4.js"></script>
+  <script>
+    console.log(window.innerWidth)
+    console.log(window.innerHeight)
+  </script>
+
+</body>
+
+</html>

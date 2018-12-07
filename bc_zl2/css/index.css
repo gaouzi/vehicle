@@ -1,0 +1,21 @@
+
+body {
+  background: black;
+}
+.section8 .begin:hover{
+  background:url("../images/08/begin.gif") no-repeat;
+}
+
+.section8 .again{
+  position:absolute;
+  margin:380px 540px;
+}
+.hand{
+  position:absolute;
+  bottom:0px;
+  left:600px;
+  
+
+  /* 不响应鼠标事件，事件会自动向下传递 */
+  pointer-events:none;
+}

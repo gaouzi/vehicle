@@ -1,0 +1,578 @@
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.head{
+    width: 100%;
+    height: 108px;
+    background: #222;
+}
+.wrap1{
+    width: 940px;
+    margin: 0 auto;
+}
+.logo{
+   margin-top: 22px; 
+}
+
+
+.head_nav li{
+    float: left;
+    height: 56px;
+    padding-top: 52px;
+    line-height: 40px;
+}
+.head_nav li a{
+    font-size: 14px;
+    color:#fff;
+    margin-left: 44px;
+    
+}
+.head_nav li a:hover{
+    color: rgb(100, 197, 226);
+}
+.yc{
+    width: 100%;
+    height: 80px;
+    background:#222;
+    z-index: 2;
+    display: none;
+}
+.show{
+    display: block;
+}
+.search_box{
+   
+    margin-top: 20px;
+   
+}
+.s1{
+    width: 188px;
+    padding-left: 28px;
+    height: 34px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    background: #222 url(../images/sou.png) no-repeat 5px center;
+}
+.thnbanner{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.thnbanner ul{
+    left: 0px;
+    top: 0px;
+    width: 500%;
+    position: absolute;
+}
+.thnbanner ul li{
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.page {
+    position: absolute;
+    left: 50%;
+    margin-left: -135px;
+    bottom: 20px;
+    line-height: 15px;
+    text-align: center;
+  }
+
+ .page a {
+    float: left;
+    width: 36px;
+    height: 1px;
+    background: #fff;
+    border: 1px solid #ccc;
+    /* border-radius: 50%; */
+    margin-left: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0px;
+  
+  }
+
+  .page a.active {
+    background:skyblue ;
+    width: 76px;
+    height: 1px;
+    border: 1px solid skyblue ;
+    
+  }
+
+  #arr {
+    display: none;
+  }
+
+  #arr span {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 5px;
+    top: 50%;
+    margin-top: -20px;
+    background: #000;
+    cursor: pointer;
+    line-height: 40px;
+    text-align: center;
+    font-weight: bold;
+    font-family: '黑体';
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.8;
+    border: 1px solid #fff;
+  }
+
+  #arr #right {
+    right: 5px;
+    left: auto;
+  }
+  #arr span.inactive {
+    opacity: 0.6;
+    
+  }
+  .thn1,.thn2{
+      width:378px ;
+      height: 1px;
+      background: #E1E1E1;
+      margin-top: 20px;
+
+  }
+  .allType_top{
+    height: 40px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .thn3{
+      font-size: 36px;
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+  .thn_list{
+      width: 100%;
+      height: 400px;
+      overflow: hidden;
+      position: relative;
+  }
+  .thn_list li{
+    width: 235px;
+    height: 400px;
+    float: left;
+  }
+  .thn7{
+      width: 235px;
+      height: 400px;
+      background:rgba(0,0,0,0.5);
+      float: left;
+      position: relative;
+     
+  }
+  .thn7 span{
+      color: #fff;
+      font-size: 20px;
+      width: 50px;
+      height: 50px;
+      display: block;
+      background:rgba(255,255,255,0.5);
+     position: absolute;
+     top:50%;
+     left:50%;
+     margin-left: -25px;
+     border-radius: 50%;
+     line-height: 50px;
+     text-align: center; 
+  }
+  .thn7 .t1{
+      width: 100px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      position: absolute;
+      left: 50%;
+      top:70%;
+      margin-left: -50px;
+      background: rgba(255,255,255,0.5);
+     color: #fff;
+  }
+  .thn_list a{
+      display: block;
+  }
+  .thnbox1,.thnbox2,.thnbox3,.thnbox4{
+    width: 235px;
+    height: 400px;
+    background: rgba(0,0,0,0.6);
+    position: absolute;
+    display: none;
+  
+  }
+  .thnbox1{
+     
+      top: 0;
+      left: 0;
+     
+  }
+   .thnbox1 .thnspan, .thnbox2 .thnspan,.thnbox3 .thnspan,.thnbox4 .thnspan{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #fff;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 30px;
+         color: #fff;
+         font-size: 18px;
+         font-family: '黑体';
+         left:50%;
+         margin-left: -17px;
+         top:260px;
+        position: absolute;
+  }
+  
+  /*.thnbox1 .thnf,.thnbox2 .thnf,.thnbox3 .thnf,.thnbox4 .thnf{
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+     color: #fff;
+     font-size: 20px;
+     font-family: '黑体';
+     left:50%;
+     margin-left: -30px;
+     top:310px;
+     font-weight: bold;
+    position: absolute;
+}
+.thnbox2 .thnf,.thnbox4 .thnf{
+    font-size: 26px;
+}
+.thnbox3 .thnf{
+    width: 100px;
+    height: 60px;
+    margin-left: -50px;
+} */
+  .thnbox2{
+    top: 0;
+    left: 235;
+}
+.thnbox3{
+    top: 0;
+    left: 470;
+}
+.thnbox4{
+    top: 0;
+    left:705;
+}
+/* 电梯 */
+.subnav
+{
+  position: fixed;
+  width: 38px;
+  height: 200px;
+  top:300px;
+  left:95%;
+  display: none;
+}
+.subnav li,.back{
+  height: 36px;
+  border:1px solid #DEDEDE;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #DEDEDE;
+  padding-left: 6px;
+  padding-top: 2px;
+}
+.subnav li:nth-child(1) {
+  background-position: 0px 0px;
+}
+.subnav li:nth-child(2) {
+  background-position: 0px -55px; 
+}
+
+.subnav li:hover,.subnav li.current,.back
+{
+  border:1px solid #ED5759;
+  background: #FDEEEE;   /* 只有冲突的时候才会出现层叠 */
+  /* 背景颜色 背景图片 背景位置 背景平铺  背景固定 */
+  /* css 层叠样式表 */
+  font-size:12px;
+  color: #ED5759;
+  padding-left: 6px;
+  padding-top: 2px;
+  height: 34px;
+  cursor: pointer;
+}
+/*  */
+.footer{
+	background-color: #f1f1f1;
+	height:890px;
+}
+.footerone{
+	height: 516px;
+	border-bottom: 1px solid #ccc;
+}
+.footerone dl{
+	float: left;
+	margin-top: 45px;
+	margin-right: 150px;
+}
+
+.footerone dt,dd{
+	margin: 30px 0;
+}
+.footerone dt a{
+	font-size: 15px;
+}
+.footertwo{
+	height: 130px;
+	border-bottom: 1px solid #ccc;
+	padding: 1px;
+}
+.footertwo p{
+	margin-top: 38px;
+}
+.footertwo p a{
+	font-size:15px;
+}
+.footertwo li{
+	float: left;
+	margin-top: 43px;
+}
+.footertwo li a{
+	margin-right: 112px;
+}
+.footerthree{
+	height: 195px;
+	padding: 1px;
+}
+.footerthree p{
+	margin-top: 38px;
+}
+.footerthree p a{
+	font-size: 15px;
+}
+.footerthree img{
+	height: 40px;
+	width: 40px;
+}
+.footerthree-one{
+	margin-top: 35px;
+	display: block;
+	float: left;
+	margin-right: 20px;
+}
+.footerfour{
+	height:50px;
+	background-color: black;
+	line-height: 50px;
+}
+.footerfour-one{
+	height: 50px;
+}
+.footerfour-one li{
+	float: left;
+	margin-right: 33px;
+}
+.footerfour-one li a{
+	color: #ccc;
+}
+.footerfour-one li a:hover{
+	color: blue;
+}
+.banner{
+	height: 550px;
+	position: relative;
+	background-image: url(../images/E-Class-Coupe.jpg);
+
+	background-repeat: no-repeat;
+	background-position: -60px 0;
+}
+
+.bannerone{
+	height: 200px;
+	width: 300px;
+	background-color: white;
+	opacity: 0.8;
+	position: absolute;
+	top: 106px;
+	left:144px;
+}
+.bannertwo{
+	height: 440px;
+	position: absolute;
+	top: 0;
+	left: 150px;
+}
+.bannerthree{
+	font-size: 25px;
+	font-weight: 200;
+	margin-left: 40px;
+	margin-top: 50px;
+}
+.bannerfour{
+	font-size: 15px;
+	font-weight: 200;
+	margin-left: 40px;
+	margin-top: 25px;
+}
+.bannerfive a{
+	font-size: 15px;
+	font-weight: 400;
+	
+}
+.bannerfive{
+	margin-left: 40px;
+	margin-top: 25px;
+}
+.bannerfive a:hover{
+	color: #74a0b9;
+}
+/*第一个显示的照片*/
+
+.findmore{
+	height: 760px;
+}
+.findmoreone li{
+	float: left;
+}
+.findmoreone-one,.findmoreone-three{
+	background-color: #ccc;
+	width: 410px;
+	height: 1px;
+}
+.findmoreone{
+    height: 80px;
+    margin-top: 40px;
+}
+.findmoreone-one,.findmoreone-three{
+	margin-top: 20px;
+}
+.findmoreone-two{
+	font-size: 30px;
+	font-weight: 200;
+}
+.findmoretwo-two-none{
+	display: none;
+}
+.findmoretwo{
+	height:300px ;
+	background: url(../images/swq.jpg) no-repeat;
+	background-size: cover;
+	line-height: 300px;
+	position: relative;
+}
+.findmoretwo-one{
+	height: 300px;
+	width: 940px;
+	background-color:black;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	left:0px;
+	top:0px;
+	display: none;
+}
+.findmoretwo-two{
+	color: white;
+	font-size: 40px;
+	font-weight: 200;
+	font-family: '宋体';
+	margin-left: 50px;
+	/*display: none;*/
+}
+.findmoretwo-three{
+	color: white;
+	font-size: 40px;
+	font-weight: 200;
+	font-family: '宋体';
+	margin-left:50px;
+	height: 40px;
+}
+.findmoretwo-four,.findmoretwo-five,.findmoretwo-six{
+	color: white;
+	margin-left: 50px;
+	font-size: 15px;
+	height: 15px;
+}
+.findmoretwo-six a{
+	color: white;
+	font-size:15px;
+}
+.findmoretwo-six a:hover{
+	color: skyblue;
+}
+.findmoretwo-four{
+	margin-top: 20px;
+}
+.findmoretwo-six{
+	margin-top: 40px;
+}
+
+/*第二个显示的照片*/
+.findmoreleft{
+	width: 620px;
+	height: 300px;
+	background: url(../images/yyy.jpg) no-repeat;
+	background-size: cover;
+	margin-top: 10px;
+	line-height: 300px;
+	position: relative;
+
+}
+.findmoreleft-one{
+	color: white;
+	font-size: 40px;
+	font-weight: 200;
+	font-family: '宋体';
+	margin-left: 50px;
+	position: relative;
+	top:20px;
+	height: 40px;
+}
+.findmoreleft-one-none{
+	display: none;
+}
+.findmoreleft-two{
+	height: 300px;
+	width: 620px;
+	background-color:black;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 0px;
+	top:0px;
+	display: none;
+}
+/*/*第三个显示的照片*/
+.findmoreright{
+	width: 310px;
+	height: 300px;
+	background: url(../images/syy.jpg) no-repeat;
+	background-size: cover;
+	line-height: 300px;
+	position: relative;
+	top: -300px;
+	left: 630px;
+}
+.findmoreright-two{
+	height: 300px;
+	width: 310px;
+	background-color:black;
+	background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	left: 0px;
+	top:0px;
+	display: none;
+}
+.findmoreright-one{
+	color: white;
+	font-size: 40px;
+	font-weight: 200;
+	font-family: '宋体';
+	margin-left: 50px;
+	position: relative;
+	top:20px;
+	height: 40px;
+}
+.findmoreright-one-none{
+	display: none;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <!-- <link rel="stylesheet" href="./css/jquery.fullpage.min.css"> -->
+  <script src="./js/jquery-1.8.3.min.js"></script>
+  <script src="./js/jquery.fullpage.min.js"></script>
+
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- jquery的动画增强插件 -->
+  <script src="./js/index.js"></script>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* body{
+    width: 100%;
+  } */
+  .again{
+    /* margin: 10000px 50%; */
+    height: 30px;
+    width: 200px;
+  }
+  .xiao {
+    width: 300px;
+    height: 300px;
+    list-style: none;
+    margin: 100px auto;
+    position: relative;
+    /* 开启3d效果 */
+    transform-style: preserve-3d;
+    /* 开启近大远小的效果 */
+    perspective: 10000px;
+    /* 动画效果 */
+    transition: all 20s linear;
+  }
+
+  body {
+    perspective: 5000px;
+  }
+  body ul{
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(360deg);
+
+  }
+  body:hover ul {
+    transform: rotateX(0deg) rotateY(5000deg) rotateZ(0deg);
+  }
+
+  .xiao li {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /*开启3d效果  */
+    transform-style: preserve-3d;
+  }
+
+  .xiao li:nth-child(1) {
+    left: 0px;
+    top: -300px;
+    background: url("./girl1.jpg") center center/100% auto;
+    transform-origin: bottom;
+    transform: rotateX(-90deg);
+  }
+
+  .xiao li:nth-child(2) {
+    right: -300px;
+    top: 0px;
+    background: url("./girl2.jpg") center center/100% auto;
+    transform-origin: left;
+    transform: rotateY(-90deg);
+  }
+
+  .xiao li:nth-child(3) {
+    right: 0px;
+    bottom: -300px;
+    background: url("./girl3.jpg") center center/100% auto;
+    transform-origin: top;
+    transform: rotateX(90deg);
+  }
+
+  .xiao li:nth-child(4) {
+    bottom: 0px;
+    left: -300px;
+    background: url("./girl4.jpg") center center/100% auto;
+    transform-origin: right;
+    transform: rotateY(90deg);
+  }
+
+  .xiao li:nth-child(5) {
+    left: 0px;
+    top: 0px;
+    background: url("./girl5.jpg") center center/100% auto;
+  }
+
+  .xiao li:nth-child(6) {
+    left: 0px;
+    top: 0px;
+    background: url("./girl6.jpg") center center/100% auto;
+    transform: translateZ(300px);
+  }
+  .heima{
+    width: 1280px;
+    height: 600px;
+  }
+</style>
+
+<body>
+  <div class="heima">
+    <div class="section section8 active">
+      <div class="begin"></div>
+      <!-- 选车按钮 -->
+      <button class="again"><a href="">小试一下</a></button>
+      <!-- 小手图片 -->
+      <img src="./images/08/hand.png" alt="" class="hand">
+      <div class="tupian"></div>
+      <ul class="xiao">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+
+</html>
